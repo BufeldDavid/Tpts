@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+}
+.bm{
+    width: 100%;
+    height: 40px;
+    display: none;
+    color: white;
+    text-align: center;
+    position: relative;
+    background-color: black;
+}
+/* забрати margin і width: 100%; */
+.bma{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(15, 15, 15);
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-top: 1px solid #fff;
+}
+.bma:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#check-menu{
+    display: none;
+}
+.label-menu{
+    display: block;
+    background-color: rgb(15, 15, 15);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+    line-height: 40px;
+}
+.burger-line{
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    top: 8px;
+    right: 10px;
+    background-color: #d1b099;
+    transition: 0.5s;
+    z-index: 10;
+}
+.secondd, .thirdd{
+    top: 18px;
+}
+.fourthh{
+    top: 28px;
+}
+.main-menu{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(100%);
+    max-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+#check-menu:checked ~ .firstt{
+    display: none;
+}
+#check-menu:checked ~ .fourthh{
+    display: none;
+}
+#check-menu:checked ~ .secondd{
+    transform: rotate(45deg);
+}
+#check-menu:checked ~ .thirdd{
+    transform: rotate(-45deg);
+}
+#check-menu:checked ~ .main-menu{
+    max-height: 500px;
+    font-size: 16px;
+}
+.landn{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+.logotype{
+    margin-left: 5%;
+}
+.logo{
+    font-family: 'Playfair Display', serif;
+    color: #f1cdb3;
+    font-size: 32px;
+}
+.sublogo{
+    font-family: sans-serif;
+    color: gray;
+    font-size: 12px;
+}
+.navigation{
+    width: 550px;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.punkt{
+    list-style: none;
+    text-transform: uppercase;
+    margin: auto;
+}
+.linky{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: black;
+    font-size: 12px;
+}
+.linky:hover{
+    text-shadow: 2px 2px 3px gray;
+    border-bottom: 2px solid #f1cdb3;
+    transition: 0.25s;
+    border-radius: 10%;
+}
+.footer{
+    background-image: url(img/FooterBeckground.png);
+    display: flex;
+    justify-content: space-around;
+}
+.ff_div{
+    width: 25%;
+}
+.ft_div{
+    width: 300px;
+    height: 317px;
+}
+.ff_div_blue{
+    margin: 30px 0 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 37px;
+}
+.ff_div_title{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.ff_div_title_h2{
+    color: white;
+    font-size: 30px;
+    text-align: left;
+}
+.ff_content_p{
+    font-family: sans-serif;
+    color: #F1CDB3;
+    display: flex;
+    align-items: center;
+}
+.ff_div_content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+.second_ff_div_blue{
+    display: flex;
+    justify-content: center;
+    height: 37px;
+}
+.fs_div{
+    width: 25%;
+}
+.ft_div{
+    display: flex;
+    align-items: flex-end;
+}
+.ft_div img{
+    height: 285.3px;
+    width: 270px;
+}
+.one_section{
+    margin: 50px 0 0 0;
+}
+.defoult_text{
+    font-family: 'Playfair Display', serif;
+    color: #545454;
+    font-size: 20px;
+}
+.section_text{
+    margin: 0 0 50px 0;
+}
+.section_title{
+    font-family: 'Playfair Display', serif;
+    color: #545454;
+    font-size: 40px;
+    text-align: center;
+}
+.section_content{
+    box-shadow: 0 0 5px #9f9f9f;
+    width: 250px;
+    height: 380px;
+    border-radius: 15px;
+}
+.content_img{
+    display: flex;
+    justify-content: center;
+}
+.content_text{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.a_button{
+    width: 180px;
+    height: 40px;
+    border-radius: 30px;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    background-color: white;
+    border: 2px solid #f1cdb3;
+}
+.a_button:hover{
+    background-color: #f1cdb3;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.content_button{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.section_first_wrap{
+    display: flex;
+    justify-content: space-around;
+}
+.section_second_wrap{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0 50px 0;
+}
+.some_button{
+    width: 40px;
+    height: 40px;
+    border: #F1CDB3 2px solid;
+    border-radius: 50%;
+    background-color: white;
+    transition: 1s;
+}
+.some_button:hover{
+    background-color: #f1cdb3;
+    transition: 1s;
+}
+.section_pages{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.button_store{
+    display: flex;
+    align-items: center;
+    width: 18%;
+    justify-content: space-around;
+}
+.three_dout{
+    color: #f1cdb3;
+    font-size: 35px;
+}
+@media (max-width: 1023px) and (min-width: 768px){
+    .landn{
+        display: none;
+    }
+    .bm{
+        display: block;
+        height: 60px;
+        z-index: 10000000000;
+    }
+    .label-menu{
+        line-height: 50px;
+    }
+    .burger-line{
+        top: 14px;
+    }
+    .secondd, .thirdd{
+        top: 24px;
+    }
+    .fourthh{
+        top: 34px;
+    }
+    .section_first_wrap, .section_second_wrap{
+        flex-wrap: wrap;
+    }
+    .section_content{
+        margin: 10px 5% 10px 5%;
+    }
+    .button_store{
+        width: 35%;
+    }
+    .footer{
+        margin-top: 30px;
+    }
+    .ft_div{
+        display: none;
+    }
+    .ff_div, .fs_div{
+        width: 40%;
+    }
+}
+@media (max-width: 767px) and (min-width: 0px){
+    .landn{
+        display: none;
+    }
+    .section_first_wrap, .section_second_wrap{
+        flex-wrap: wrap;
+    }
+    .section_content{
+        margin: 10px 5% 10px 5%;
+    }
+    .button_store{
+        width: 75%;
+    }
+    .headcontent{
+        width: 95%;
+    }
+    .bm{
+        display: block;
+        height: 60px;
+    }
+    .header{
+        height: auto;
+    }
+    .label-menu{
+        line-height: 50px;
+    }
+    .burger-line{
+        top: 14px;
+    }
+    .secondd, .thirdd{
+        top: 24px;
+    }
+    .fourthh{
+        top: 34px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+    }
+    .ft_div{
+        display: block;
+        height: auto;
+    }
+    .ff_div, .fs_div{
+        width: 70%;
+    }
+}
